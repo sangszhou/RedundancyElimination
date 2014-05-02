@@ -1,0 +1,14 @@
+test : MyFileSystem.o DispatchTraffic.o StartProgram.o
+	g++ -g -rdynamic -o test MyFileSystem.o DispatchTraffic.o StartProgram.o -L/usr/local/boost_1_55_0/stage/lib -lboost_filesystem
+
+StartProgram.o : DispatchTraffic.h
+	g++ -g -rdynamic -c StartProgram.cpp
+
+DispatchTraffic.o : DispatchTraffic.h MyFileSystem.h
+	g++ -g -rdynamic -c DispatchTraffic.cpp 
+
+MyFileSystem.o : Session.h MyFileSystem.h 
+	g++ -g -rdynamic -c MyFileSystem.cpp 
+
+clean :
+	rm test StartProgram.o DispatchTraffic.o MyFileSystem.o

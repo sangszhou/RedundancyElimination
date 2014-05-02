@@ -1,0 +1,24 @@
+
+Step 1:
+I randomly select one pcap file and load it into wireshark
+By setting filter to "tcp or udp", I get the statistic information which says that
+
+INFORMATION FOR PCAP FILE JAN 04 16-48-19 2013
+Packet Captured Dislayed Display% 
+	   352827 	352294	 99.849%
+
+Then I run my program(DispatchTraffic) and use my own filter to filter 
+
+Fuck compile error I encounter this error while compiling
+libboost_system.so.1.55.0: error adding symbols: DSO missing from command line
+I have project called BoostEnvirTest which verify that both boost_filesytem and boost_regex works
+However, Still doesn't work when compiling DispatchTraffic
+!Problem sloved, I added -lboost_system before -lboost_filesystem and it worked fine for me now
+
+##
+While viewing the jaccount-ip corresponding file, I come to realize that 
+I can count the total allocated ip address 
+meaningless information, for now, however 
+##
+
+I use wireshark 
