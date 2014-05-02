@@ -1,0 +1,25 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+Connection	DataStruct.h	/^class Connection  {$/;"	c
+EtherPattern	DataStruct.h	/^class EtherPattern  {$/;"	c
+Session	DataStruct.h	/^class Session {$/;"	c
+avgTime	DataStruct.h	/^	int avgTime;		\/\/ average connection time $/;"	m	class:EtherPattern
+connections	DataStruct.h	/^	int connections;	\/\/ connection times to wifi$/;"	m	class:EtherPattern
+endTime	DataStruct.h	/^	int endTime;$/;"	m	class:Connection
+endTime	DataStruct.h	/^	int endTime;$/;"	m	class:Session
+etherAddr	DataStruct.h	/^	string etherAddr;$/;"	m	class:Connection
+etherAddr	DataStruct.h	/^	string etherAddr;$/;"	m	class:Session
+ipAddr	DataStruct.h	/^	string ipAddr;$/;"	m	class:Connection
+startTime	DataStruct.h	/^	int startTime;$/;"	m	class:Connection
+startTime	DataStruct.h	/^	int startTime;$/;"	m	class:Session
+varTime	DataStruct.h	/^	int varTime;		\/\/ variance time for each connection$/;"	m	class:EtherPattern
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+LoadSession	LoadData.cpp	/^void LoadSession(const char* filename, map<string, vector<Session>& IPLog)  {$/;"	f
+LOADDATA_H	LoadData.h	2;"	d
+ConvertStrToTimeStamp	SplitRadius.h	/^int ConvertStrToTimeStamp(const char* str, const int _day)  {$/;"	f
+SPLITRADIUS_H	SplitRadius.h	2;"	d
+str_split	SplitRadius.h	/^char** str_split(char* str, char delim, int *numSplits) {$/;"	f
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+main	test.cpp	/^int main()  {$/;"	f
