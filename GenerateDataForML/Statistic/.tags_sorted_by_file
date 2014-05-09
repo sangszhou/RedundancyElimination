@@ -1,0 +1,36 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+Statistic	Statistic.cpp	/^Statistic::Statistic()  {$/;"	f	class:Statistic
+WriteToFile	Statistic.cpp	/^void Statistic::WriteToFile(const char *filePath, const char *client)  {$/;"	f	class:Statistic
+setConnectionDuration	Statistic.cpp	/^void Statistic::setConnectionDuration(double traffic)  {$/;"	f	class:Statistic
+setConnectionTimes	Statistic.cpp	/^void Statistic::setConnectionTimes(double traffic)  {$/;"	f	class:Statistic
+setDownLoadRedun	Statistic.cpp	/^void Statistic::setDownLoadRedun(double traffic)  {$/;"	f	class:Statistic
+setDownLoadTraffic	Statistic.cpp	/^void Statistic::setDownLoadTraffic(double traffic)  {$/;"	f	class:Statistic
+setHitNum	Statistic.cpp	/^void setHitNum(double num)  {$/;"	f
+setIncreHitNum	Statistic.cpp	/^void setIncreHitNum(double)  {$/;"	f
+setPortDNSRedun	Statistic.cpp	/^void Statistic::setPortDNSRedun(double traffic)  {		\/\/ port 53$/;"	f	class:Statistic
+setPortDNSTraffic	Statistic.cpp	/^void Statistic::setPortDNSTraffic(double traffic)  {		\/\/ port 53$/;"	f	class:Statistic
+setPortFTPRedun	Statistic.cpp	/^void Statistic::setPortFTPRedun(double traffic)  {		\/\/ port 20$/;"	f	class:Statistic
+setPortFTPTraffic	Statistic.cpp	/^void Statistic::setPortFTPTraffic(double traffic)  {		\/\/ port 20$/;"	f	class:Statistic
+setPortHTTPRedun	Statistic.cpp	/^void Statistic::setPortHTTPRedun(double traffic)  {	\/\/ port 80, 8000, 8080$/;"	f	class:Statistic
+setPortHTTPSRedun	Statistic.cpp	/^void Statistic::setPortHTTPSRedun(double traffic)  {	\/\/ port 443$/;"	f	class:Statistic
+setPortHTTPSTraffic	Statistic.cpp	/^void Statistic::setPortHTTPSTraffic(double traffic)  {	\/\/ port 443$/;"	f	class:Statistic
+setPortHTTPTraffic	Statistic.cpp	/^void Statistic::setPortHTTPTraffic(double traffic)  {	\/\/ port 80, 8000, 8080$/;"	f	class:Statistic
+setPortRTSPRedun	Statistic.cpp	/^void Statistic::setPortRTSPRedun(double traffic)  {	\/\/ port 554, 7070$/;"	f	class:Statistic
+setPortRTSPTraffic	Statistic.cpp	/^void Statistic::setPortRTSPTraffic(double traffic)  {	\/\/ port 554, 7070$/;"	f	class:Statistic
+setSampleNum	Statistic.cpp	/^void setSampleNum(double num)  {$/;"	f
+setTCPRedun	Statistic.cpp	/^void Statistic::setTCPRedun(double traffic)  {$/;"	f	class:Statistic
+setTCPTraffic	Statistic.cpp	/^void Statistic::setTCPTraffic(double traffic)  {$/;"	f	class:Statistic
+setUDPRedun	Statistic.cpp	/^void Statistic::setUDPRedun(double traffic)  {$/;"	f	class:Statistic
+setUDPTraffic	Statistic.cpp	/^void Statistic::setUDPTraffic(double traffic)  {$/;"	f	class:Statistic
+setUpLoadRedun	Statistic.cpp	/^void Statistic::setUpLoadRedun(double traffic)  {$/;"	f	class:Statistic
+setUpLoadTraffic	Statistic.cpp	/^void Statistic::setUpLoadTraffic(double traffic)  {$/;"	f	class:Statistic
+Statistic	Statistic.h	/^class Statistic  {$/;"	c
+_STATISTIC_H_	Statistic.h	2;"	d
+attributeNum	Statistic.h	/^	int attributeNum;$/;"	m	class:Statistic
+attributes	Statistic.h	/^	double attributes[100];$/;"	m	class:Statistic
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+main	testStatistic.cpp	/^int main()  {$/;"	f
