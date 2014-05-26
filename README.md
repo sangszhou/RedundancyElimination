@@ -21,12 +21,14 @@ In this phase, we classify packets according to their time stamp and IP address.
 Those packets follow [CAPWAP protocal](http://en.wikipedia.org/wiki/CAPWAP) and are readable in [wireshark](http://www.wireshark.org/). An alternative to me to read/write packets is Winpcap(Libpcap). I wrote code using Winpcap in Visual studio under windows operating system and it turned out that it is far too slow(60s/190M). So, efficiency issues become the biggest challenge in this phase.
 
 The principles I followed to handle the efficiency issues are:
+
 1. Switch to linux operating system to get faster IO speed and more efficient STL implementation. 
 2. Redesign user log table data structure by switching time description from string to int.
 3. Abandon Winpcap and implement my own one to avoid calling functions.
 4. Refuse using local varible unless necessary.
 5. Refuse calling method unless necessary.
 6. Refuse using STL unless necessary.
+
 By following above priciples, I increased the performance dramatically(10s/190M). Note that, there still other principles may improve the performance like write buffer. But 10s/190M already meet my demand so I didn't try that one.
 
 ##Phase three pattern extraction and redundancy elimination
@@ -34,10 +36,12 @@ We have already merged those packets which have same ID into one file. In this p
 I faced performace issues in this phrase too, but unlike last phrase, the bottleneck is not IO anymore but the limit of computing capacity.
 
 There are also principles to deal with it:
+
 1. Use [murmurhash](http://en.wikipedia.org/wiki/MurmurHash) to generate fingerprints. Theoretically, Rabin Karp algorithm should yield better performance, but RK needs big integer. At last, I found that due to the introduction of gmpxx.libray(used to present big integer), RK algorithm is slower than violent solution. 
 2. Use bloom filter to help calculate optimal redundancy rate
 3. Sampling data set 
 4. Multithreading solution
+
 the final performance is about 25s/110M, and I see no more improvement.
 
 ##Summary
