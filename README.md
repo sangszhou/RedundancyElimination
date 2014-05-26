@@ -33,7 +33,7 @@ By following above priciples, I increased the performance dramatically(10s/190M)
 
 ##Phase three pattern extraction and redundancy elimination
 We have already merged those packets which have same ID into one file. In this phase, we gonna extract the data pattern of each user and calculate user's redundancy rate.
-I faced performace issues in this phrase too, but unlike last phrase, the bottleneck is not IO anymore but the limit of computing capacity.
+I faced performace issues in this phase too, but unlike last phrase, the bottleneck is not IO anymore but the limit of computing capacity.
 
 There are also principles to deal with it:
 
